@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        // 1. TABLE PRINT KARE
+        // DESCRIPTION: user se koi number le and uska table 10 tk print kare
+
+
+        // User se number lena
+        // let number = Number(prompt("Koi number daalein: "));
+
+        // // Table print karna
+        // console.log(`Table of ${number}:`);
+        // for (let i = 1; i <= 10; i++) {
+        //     console.log(`${number} x ${i} = ${number * i}`);
+        // }
+
+
+        // 2. ARRAY ELEMENTS KA SUM PRINT KARE
+        // DESCRIPTION:
+        // 1. user se 5 numbers le and unko aik aik kar k array me rakhe
+        // 2. phr array elements ka sum find kar k print kare
+
+        // let numbers = [];
+        // for (let i = 0; i < 5; i++) {
+        //     let num = Number(prompt(`Number ${i + 1}: `));
+        //     numbers.push(num);
+        // }
+
+        // // 2. Array elements ka sum find karna
+        // let totalSum = 0;
+        // for (let i = 0; i < numbers.length; i++) {
+        //     totalSum += numbers[i];
+        // }
+
+        // // 3. Sum print karna
+        // console.log("Array elements ka sum:", totalSum);
+
+
+        // 3. ARRAY KA SUB SE BARA NUMBER PRINT KARE
+        // DESCRIPTION:
+        // 1. user se 5 numbers le and unko aik aik kar k array me rakhe
+        // 2. phr array elements me SUB SE BARA NUMBER find kar k print kare
+
+        // 1. User se 5 numbers lena
+        let numbers = [];
+        for (let i = 0; i < 5; i++) {
+            let num = Number(prompt(`Number ${i + 1}: `));
+            numbers.push(num);
+        }
+
+        // 2. Array elements me se sabse bara number find karna
+        let maxNumber = numbers[0];
+        for (let i = 1; i < numbers.length; i++) {
+            if (numbers[i] > maxNumber) {
+                maxNumber = numbers[i];
+            }
+        }
+
+        // 3. Sabse bara number print karna
+        console.log("Array elements me se sabse bara number:", maxNumber);
+
+    </script>
+</body>
+
+</html>
